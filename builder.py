@@ -127,7 +127,10 @@ if __name__ == "__main__":
                .add_additif("Conservateur", 50.0)
                .set_marque("SnackCo")
                .add_ingredient("Chips de pomme de terre", 200.0)
+               .add_ingredient("Huile de tournesol", 50.0)
+               .add_ingredient("Sel", 10.0)
                .add_allergene("Gluten", 20.00)
+               .add_allergene("Lait", 5.00)
                .build())
-    
+
     print(produit)
