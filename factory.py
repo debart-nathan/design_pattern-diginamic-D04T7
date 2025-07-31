@@ -8,8 +8,8 @@ class ElementType(Enum):
 
 # Définition de l'énumération pour les unités
 class Unit(Enum):
-    MICRO_GRAME = "microgramme"
-    MILI_GRAME = "milligramme"
+    MICRO_GRAMME = "microgramme"
+    MILLI_GRAMME = "milligramme"
 
 # Classe mère représentant un élément
 class Element:
@@ -46,9 +46,9 @@ class ElementFactory:
 
 # Exemple d'utilisation
 if __name__ == "__main__":
-    ingredient = ElementFactory.create_element(ElementType.INGREDIENT, "Tomate", 100, Unit.MILI_GRAME)
-    allergene = ElementFactory.create_element(ElementType.ALLERGENE, "Gluten", 0.5, Unit.MICRO_GRAME)
-    additif = ElementFactory.create_element(ElementType.ADDITIF, "Conservateur", 0.1, Unit.MILI_GRAME)
+    ingredient = ElementFactory.create_element(ElementType.INGREDIENT, "Tomate", 100, Unit.MILLI_GRAMME)
+    allergene = ElementFactory.create_element(ElementType.ALLERGENE, "Gluten", 0.5, Unit.MICRO_GRAMME)
+    additif = ElementFactory.create_element(ElementType.ADDITIF, "Conservateur", 0.1, Unit.MILLI_GRAMME)
 
     print(ingredient)
     print(allergene)
